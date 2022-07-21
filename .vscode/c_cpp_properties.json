@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/musa/catkin_ws/src/aerial_mapping/include/**",
+        "/home/musa/catkin_ws/src/camera_trigger/include/**",
+        "/home/musa/catkin_ws/src/fpsview/include/**",
+        "/home/musa/catkin_ws/src/gazebo_pkg/include/**",
+        "/home/musa/catkin_ws/src/geometric_transforms/include/**",
+        "/home/musa/catkin_ws/src/guess_gps/include/**",
+        "/home/musa/catkin_ws/src/include_pkg/include/**",
+        "/home/musa/catkin_ws/src/mission_path/include/**",
+        "/home/musa/catkin_ws/src/object_avoidance/include/**",
+        "/home/musa/catkin_ws/src/offboard_fixed_wing/include/**",
+        "/home/musa/catkin_ws/src/offboard_path/include/**",
+        "/home/musa/catkin_ws/src/plotters/include/**",
+        "/home/musa/catkin_ws/src/suas/include/**",
+        "/home/musa/catkin_ws/src/teknofest/include/**",
+        "/home/musa/catkin_ws/src/teknofest2020/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
