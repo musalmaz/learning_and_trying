@@ -78,8 +78,31 @@ class myCopy{
         //     return *this;
         // }
 };
-
+/* ********* move contructıor, assignment  ****** */
+class Example6{
+    std::string* ptr;
+    public:
+        Example6 (const std::string& str) : ptr(new std::string(str)) {}
+        ~Example6 () {delete ptr;}
+        //move contructor
+        Example6 (Example6&& x) : ptr(x.ptr) {x.ptr = nullptr;}
+        //move assignment
+        Example6& operator= (Example6&& x){
+            delete ptr;
+            ptr = x.ptr;
+            x.ptr = nullptr;
+            return *this;
+        }
+        const std::string& content() const {return *ptr;}
+        Example6 operator+(const Example6& temp){
+            return Example6(content() + temp.content());
+        }
+};
 int main(int argc, char **argv){
+    Example6 o1 {"Examp"};
+    Example6 o2 = Example6("ple");
+    o1 = o1 + o2;
+    std::cout<< o1.content() << std::endl;
     myCopy obj1("test", 34);
     myCopy obj2 = obj1;
     std::cout<< obj2.content() << std::endl;
